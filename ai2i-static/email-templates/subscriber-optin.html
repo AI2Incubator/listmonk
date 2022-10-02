@@ -1,0 +1,14 @@
+{{ define "subscriber-optin" }}
+{{ template "header" . }}
+<h2>{{ L.Ts "email.optin.confirmSubTitle" }}</h2>
+<p>{{ L.Ts "email.optin.confirmSubWelcome" }} {{ .Subscriber.FirstName }}</p>
+<p>You have been added to the newsletter: AI2 Incubator Insights. Confirm your
+    subscription by clicking the below button.
+</p>
+
+<p>
+    <a href="{{ .OptinURL }}" class="button">{{ L.Ts "email.optin.confirmSub" }}</a>
+</p>
+<a href="{{ .UnsubURL }}">{{ L.T "email.unsub" }}</a>
+
+{{ end }}

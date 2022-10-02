@@ -33,5 +33,5 @@ ARG LISTMONK_db__ssl_mode=disable
 ENV LISTMONK_db__ssl_mode=${LISTMONK_db__ssl_mode}
 
 EXPOSE 9000
-CMD ./listmonk --install --config="" --yes && ./listmonk --config=""
+CMD ./listmonk --install --config="" --yes && ./listmonk --config="" --static-dir=ai2i-static
 
