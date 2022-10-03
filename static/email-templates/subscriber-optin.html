@@ -3,12 +3,9 @@
 <h2>{{ L.Ts "email.optin.confirmSubTitle" }}</h2>
 <p>{{ L.Ts "email.optin.confirmSubWelcome" }} {{ .Subscriber.FirstName }}</p>
 <p>You have been added to the AI2 Incubator Insights newsletter. Please confirm
-    by clicking the below button.
+    at <a href="{{ .OptinURL }}">this link</a>.
 </p>
 
-<p>
-    <a href="{{ .OptinURL }}" class="button">{{ L.Ts "email.optin.confirmSub" }}</a>
-</p>
 <a href="{{ .UnsubURL }}">{{ L.T "email.unsub" }}</a>
 
 {{ end }}
